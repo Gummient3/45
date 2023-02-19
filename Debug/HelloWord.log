@@ -1,0 +1,6 @@
+﻿  MyForm.cpp
+C:\Users\gilim\source\repos\HelloWord\MyForm.h(477,20): warning C4101: e: неиспользованная локальная переменная
+C:\Users\gilim\source\repos\HelloWord\MyForm.h(493,19): warning C4101: str: неиспользованная локальная переменная
+C:\Users\gilim\source\repos\HelloWord\MyForm.h(525,29): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  HelloWord.vcxproj -> C:\Users\gilim\source\repos\HelloWord\Debug\HelloWord.exe

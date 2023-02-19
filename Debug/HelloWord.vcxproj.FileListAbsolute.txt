@@ -1,0 +1,4 @@
+C:\Users\gilim\source\repos\HelloWord\Debug\HelloWord.MyForm.resources
+C:\Users\gilim\source\repos\HelloWord\Debug\HelloWord.vcxproj.GenerateResource.cache
+C:\Users\gilim\source\repos\HelloWord\Debug\HelloWord.exe
+C:\Users\gilim\source\repos\HelloWord\Debug\HelloWord.vcxproj.AssemblyReference.cache
