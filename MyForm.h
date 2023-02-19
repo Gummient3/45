@@ -45,9 +45,9 @@ namespace HelloWord {
 			}
 		}
 		void findFunc() {
+			
 			try {
-				result->Text = "hui";
-
+				
 				String^ tmp;
 				//array< Double >^ mas = gcnew array< Double >(10);
 				tmp = textBox5->Text;
@@ -65,7 +65,8 @@ namespace HelloWord {
 
 					if (System::Convert::ToInt32(data[i]) % 10 == System::Convert::ToInt32(textBox8->Text)) {
 						//MessageBox::Show(Convert::ToString(System::Convert::ToInt32(data[i]) % 10));
-						outdata += System::Convert::ToInt32(data[i]) % 10;
+						outdata += data[i];
+;						outdata += " ";
 
 					}
 				}
@@ -73,13 +74,16 @@ namespace HelloWord {
 
 					//MessageBox::Show(tmp);
 				}
-				MessageBox::Show("outdata\n" + outdata);
+				//MessageBox::Show("outdata\n" + outdata);
+				button6->PerformClick();
 				result->Text = outdata;
-				result->Text = "hui";
+				outdata = "";
+				
 			}
 			catch (...) {
 
 			}
+
 		}
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	protected:
@@ -115,6 +119,7 @@ namespace HelloWord {
 	private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::TextBox^ textBox8;
+private: System::Windows::Forms::Button^ button6;
 
 
 
@@ -156,6 +161,7 @@ namespace HelloWord {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
+			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -417,11 +423,25 @@ namespace HelloWord {
 			// 
 			this->openFileDialog1->FileName = L"openFileDialog1";
 			// 
+			// button6
+			// 
+			this->button6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->button6->Location = System::Drawing::Point(508, 244);
+			this->button6->Margin = System::Windows::Forms::Padding(4);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(169, 30);
+			this->button6->TabIndex = 15;
+			this->button6->Text = L"clear";
+			this->button6->UseVisualStyleBackColor = false;
+			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(707, 576);
+			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
@@ -736,8 +756,15 @@ private: System::Void textBox5_TextChanged(System::Object^ sender, System::Event
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button3_Click_1(System::Object^ sender, System::EventArgs^ e) {
-	result->Text = "hui";
+	MessageBox::Show("from 471 string");
+	
 	findFunc();
+
+	
+}
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	result->Text = "";
+	
 }
 };
 }
