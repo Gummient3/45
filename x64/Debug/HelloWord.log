@@ -1,1 +1,4 @@
-﻿  HelloWord.vcxproj -> C:\Users\user\Source\Repos\45.1\x64\Debug\HelloWord.exe
+﻿  MyForm.cpp
+C:\Users\user\source\repos\45.1\MyForm.h(507,20): warning C4101: e: неиспользованная локальная переменная
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  HelloWord.vcxproj -> C:\Users\user\source\repos\45.1\x64\Debug\HelloWord.exe

@@ -56,7 +56,10 @@ namespace HelloWord {
 				array<String^>^ data = gcnew array<String^>(n);
 				array<Int32^>^ newdata = gcnew array<Int32^>(n);
 				
+				//
+				
 				data = (tmp->Split());
+				
 				for (int i = 0; i < n; i++) {
 					newdata[i] = System::Convert::ToInt32(data[i]);
 				}
@@ -752,6 +755,7 @@ private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^
 private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void textBox5_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	
 }
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
 }
